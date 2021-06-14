@@ -1,0 +1,792 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container-main{
+
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+
+/* items del nav */
+
+.item-nav{
+
+	padding: 0.5rem 1rem;
+	transition: all 0.4s linear;
+	padding: 10px;
+	color:#a89d9d;
+	font-family: 'Roboto';
+	font-size:1.2rem
+
+}
+
+
+.item-nav:hover{
+
+	color:#fcb045;
+	text-decoration: none;
+
+}
+
+.btn-registro{
+
+	background-color:transparent;
+	border:solid 2px #fff;
+	width:200px;
+	border-radius:5px;
+	font-weight: bold;
+	padding:15px 35px;
+	color:#fff;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+
+.btn-registro:hover{
+
+	background-color:#FF7C01;
+	outline: none;
+	color: #fff;
+	font-weight: bold;
+	padding:17px 40px;
+	border:solid 2px #fff; /*rgba(255,140,0,8);*/
+	box-shadow: 0px 0px 0px 1px rgb(58,57,110);
+	animation: anim-shadow-reg .3s forwards;
+	cursor: pointer;
+	transition:all linear 0.3s,padding .3s;
+	text-decoration: none;
+
+}
+
+@keyframes anim-shadow-reg{
+	100%{
+		
+		box-shadow: 0px 0px 35px 15px rgba(255,140,0,8);
+	}
+}
+
+
+
+.container-main h2 {
+
+	width: 100%;
+	font-weight: bold;
+	font-size: 3.5rem;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:10px;
+
+}
+
+#parrafo-registro{
+
+	width: 100%;
+	font-weight: bold;
+	font-size: 1.8rem;
+	font-family:'Roboto', sans-serif;
+	letter-spacing:4px;
+
+}
+
+.separacion{
+
+	width:100%;
+	height:30px;
+
+}
+
+
+/* CONTENIDO PRINCIPAL */
+
+.header-cuentas{
+
+	display: flex;
+	width:100%;
+	padding:55px;
+	background:#FF7C01;
+	text-align: center;
+	color: #fff
+	
+}
+
+.item-header-cuentas{
+
+	font-family: 'Roboto','sans-serif';
+	margin: 0px auto;
+	align-self: center;
+}
+	
+.movimientos{
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	flex-wrap: wrap;
+	padding:20px;
+	font-family:'Roboto','sans-serif';
+	background: #f8f9fa!important;
+	
+}
+
+
+.dropdown-menu
+{
+
+	color:#000;
+}
+
+
+.tabla-main{
+
+	width: 100%;
+}
+
+
+/* **** ESTILOS TRANSFERENCIAS **** */
+
+
+.main-tranfer{
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+width: 100%;
+text-align: center;
+
+}
+
+.main-tranfer h1{
+
+
+	width: 100%;
+	padding:75px;
+	letter-spacing: 3px;
+	font-family: 'Roboto','sans-serif';
+	background: #FF7C01;
+	color:#fff
+}
+
+.contenido-principal{
+
+margin:30px auto;
+
+
+}
+
+.cbu input{
+
+	width:250px;
+	padding:5px;
+	border-radius:5px;
+	border:solid 1px #a89d9d;
+	outline: none;
+	margin: 0px auto;
+}
+
+
+.monto input{
+
+	width:250px;
+	padding:5px;
+	border-radius:5px;
+	border:solid 1px #a89d9d;
+	outline: none;
+	margin: 0px auto;
+}
+
+
+
+
+/* boton seleccion de transfer */
+
+.opcion-envio{
+
+	margin: 0px auto;
+	padding:20px;
+}
+
+
+/* boton envio a cuenta propia */
+
+.btn-envio-cp{
+
+	background:transparent;
+	border:solid 1px #a89d9d;
+	width: 200px;
+	border-radius:5px;
+	font-weight: bold;
+	padding:15px 35px;
+	color:#a89d9d;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-envio-cp:hover{
+
+	background-color:#FF7C01;
+	color: #fff;
+	transition:all linear 0.7s;
+	cursor: pointer;
+	text-decoration: none;
+	border:solid 1px rgba(255,140,0,8);
+	box-shadow: 0px 0px 0px 1px rgb(58,57,110);
+	animation: anim-shadow .4s forwards;
+
+}
+
+
+/* boton enviar */
+
+.btn-envio{
+
+	background:#fcb045;
+	width:200px;
+	font-family: 'Raleway', sans-serif;
+	border:solid 1px transparent;
+	border-radius: 5px;
+	font-weight: bold;
+	padding:15px 35px;
+	color:#fff;
+	text-transform: uppercase;
+	text-align: center;
+	transition: all linear 1s;
+	opacity: 0;
+	cursor: pointer;
+	
+}
+
+.btn-envio:hover{
+
+	background-color:#FF7C01;
+	border:solid 1px rgba(255,140,0,8);
+	box-shadow: 0px 0px 0px 1px rgb(58,57,110);
+	animation: anim-shadow .4s forwards;
+	text-decoration: none;
+	color: #fff;
+}
+
+@keyframes anim-shadow{
+	100%{
+
+		box-shadow: 0px 0px 35px 15px rgba(255,140,0,8);
+	}
+}
+
+
+/* sectores que aparecen recien cuando seleccionan el tipo de transfer */
+
+.cbu{
+
+	padding: 11px;
+	margin-top:20px;
+	opacity: 0;
+	margin-bottom:30px;
+	transition: all linear 1s;
+	
+	
+}
+
+
+.tranfer-cuenta-propia{
+
+	padding:10px;
+	margin-top:20px;
+	opacity: 0;
+	margin-bottom:30px;
+	transition: all linear 1s;
+	
+	
+}
+
+.seccion-cuentas{
+
+	display: none;
+	margin-bottom:150px;
+}
+
+
+
+
+/* **** ESTILOS PRESTAMOS **** */
+
+.main-prestamos{
+
+
+width: 100%;
+text-align: center;
+
+}
+
+.tabla-container{
+	
+	width: 100%;
+	margin-bottom: 150px;
+}
+
+
+
+.main-prestamos h1{
+
+	width: 100%;
+	padding:75px;
+	letter-spacing: 3px;
+	font-family: 'Roboto','sans-serif';
+	background: #FF7C01;
+	color:#fff
+
+}
+
+.consultar {
+
+	border-radius: 4px;
+	padding:25px;
+	margin:50px 100px 15px 100px;
+	-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.15);
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+
+}
+
+.solicitar {
+
+	border-radius: 4px;
+	padding:25px;
+	margin:15px 100px 15px 100px;
+	-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.15);
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+
+}
+
+.pagar {
+
+	border-radius: 4px;
+	padding:25px;
+	margin:15px 100px 50px 100px;
+	-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.15);
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+}
+
+
+#simulador{
+
+	margin: 0px auto 150px auto;
+	display: flex;
+	flex-wrap: wrap;
+	width:50%;
+	text-align: center;
+	border-radius:5px;
+	color: #000;
+	padding:15px;
+	-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.15);
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+
+}
+
+#simulador div{
+
+	width: 100%;
+}
+
+
+.monton-solic{
+
+background: #fff;
+padding:75px;
+margin-bottom:25px;
+
+}
+
+/*
+#simulador{
+
+	margin: 0px auto;
+	width:50%;
+	text-align: center;
+	border-radius: 5px;
+	background:#212529;
+	color: #fff;
+	padding:25px;
+	margin-bottom:50px;
+
+}*/
+
+
+
+/* lo mismo pero btn calcular para poder usar la clase btn calcular sola */
+
+.btn-calcular{
+
+	background:#fcb045;
+	border:none;
+	width: 200px;
+	font-family: 'Raleway', sans-serif;
+	border-radius: 5px;
+	font-weight: bold;
+	padding:15px 15px;
+	color:#fff;
+	text-transform: uppercase;
+	text-align: center;
+	transition:.4s;
+}
+
+.btn-calcular:hover{
+
+	background-color:#FF7C01;
+	outline: none;
+	border:solid 1px rgba(255,140,0,8);
+	box-shadow: 0px 0px 0px 1px rgb(58,57,110);
+	animation: anim-shadow .4s forwards;
+}
+
+@keyframes anim-shadow{
+	100%{
+
+		box-shadow: 0px 0px 50px 20px rgba(255,140,0,8);
+	}
+}
+
+/* lo mismo pero btn volver para poder usar la clase btn calcular sola */
+
+.btn-volver{
+
+	background:#fcb045;
+	border:none;
+	width: 155px;
+	font-family:'Raleway', sans-serif;
+	border-radius: 5px;
+	font-weight: bold;
+	padding:13.6px 10px;
+	color:#fff;
+	text-transform: uppercase;
+	text-align: center;
+	transition:.4s;
+	margin:20px auto;
+	
+}
+
+.btn-volver:hover{
+
+	background-color:#FF7C01;
+	box-shadow: 0px 0px 0px 1px rgb(58,57,110);
+	animation: anim-shadow .4s forwards;
+	color: #fff;
+
+}
+
+
+/* btn solicitar prestamos*/
+.btn-solicitar-prestamo{
+
+	background:#fcb045;
+	border:none;
+	width: 155px;
+	font-family:'Raleway', sans-serif;
+	border-radius: 5px;
+	font-weight: bold;
+	padding:13.6px 10px;
+	color:#fff;
+	text-transform: uppercase;
+	text-align: center;
+	transition:.4s;
+	margin:20px auto;
+	
+}
+
+.btn-solicitar-prestamo:hover{
+
+	background-color:#FF7C01;
+	box-shadow: 0px 0px 0px 1px rgb(58,57,110);
+	animation: anim-shadow .4s forwards;
+	color: #fff;
+
+}
+
+@keyframes anim-shadow{
+	100%{
+
+		box-shadow: 0px 0px 50px 20px rgba(255,140,0,8);
+	}
+}
+
+
+/* estilo imput par algunos input */
+
+.input-1{
+
+width:250px;
+border:2px solid #aaa;
+border-radius:4px;
+margin:8px 0;
+outline: none;
+padding: 8px;
+box-sizing: border-box;
+transition: .3s;
+}
+
+.input-1:focus{
+
+	border-color: #FF7C01;
+	box-shadow:0 0 8px 0 #FF7C01;
+}
+
+
+
+/* footer */
+.footer{
+
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+padding:50px 50px 50px 50px;
+margin:20px 20px -30px 20px;
+opacity: 0;
+transition:all 1s linear;
+
+}
+
+.contact{
+
+
+width: 100%;
+font-size: 1.2rem;
+
+
+}
+
+.contact a:hover{
+
+text-decoration:none;
+border:none;
+}
+
+.contact div{
+
+ padding: 5px;
+
+}
+
+.contact a {
+	
+	color:#000;
+	text-decoration:none;
+	border:none;
+	font-size: 1.5rem;
+	letter-spacing: 5px;
+	font-family: 'Roboto',sans-serif;
+}
+
+
+.container-footer{
+
+	width: 100%;
+	background: #333; 
+	color: #fff;
+	text-align: center;
+	line-height:75px;
+}
+
+
+.text:hover{
+
+	color:#fcb045
+}
+
+
+.container-form{
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* fin footers */
+
+/* aparece de manera animada */
+
+/*
+.transform_up{transform: translateY(20%);}
+.transform_down{transform: translateY(-20%);}
+.transform_left{transform: translateX(20%);}
+.transform_right{transform: translateX(-20%);}
+*/
+
+/* Datos personales */
+
+
+.main-perfil{
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+width: 100%;
+text-align: center;
+
+
+}
+
+.main-perfil h1{
+
+
+	width: 100%;
+	padding:75px;
+	letter-spacing: 3px;
+	font-family: 'Roboto','sans-serif';
+	background:linear-gradient(to top, transparent ,#FF7C01);
+	background: #FF7C01;
+	color: #fff
+}
+
+
+
+.caja-datos{
+
+width:370px;
+align-self: center;
+text-align: center;
+margin:25px auto;
+padding: 1.5rem;
+border-radius: .5rem;
+font-family: 'sans-serif'
+-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.15);
+box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+opacity: 0;
+transition:all 1s linear;
+
+
+}
+
+
+.foto-perfil{
+	display:flex;
+	justify-content:center;
+	opacity: 0;
+	transition:all 1s linear;
+
+}
+
+.foto-perfil img{
+
+	display: block;
+	margin:25px;
+	width: 150px;
+	height: 150px;
+	border-radius:50%;
+	-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.15);
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+}
+
+
+.nombre-usuario{
+
+	line-height:45px;
+	font-weight: bold;
+	font-size: 1.5rem;
+
+}
+
+.container-grid{
+
+	width:90%;
+	margin:75px auto 75px auto;
+
+}
+
+.caja-datos-det{
+
+	display:grid;
+	grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+	grid-template-rows: repeat(auto-fill,minmax(50px,1fr));
+	grid-auto-rows:1fr;
+	grid-auto-columns: 1fr;
+	grid-gap:5px;
+	padding:1.5rem 1rem 1rem 1rem;
+	border-radius: .5rem;
+	font-family: 'sans-serif'
+	-webkit-box-shadow:0 0 5px 3px rgba(0,0,0,.15);
+	box-shadow: 0 0 5px 3px rgba(0,0,0,.15);
+	opacity: 0;
+	transition:all 1s linear;
+	
+
+}
+
+.caja-datos-det label{
+
+	line-height:65px;
+	font-size: 1.2rem;
+
+}
+
+
+/* SECCION PRESTAMOS CONFIRMADO */
+
+.prestamo-solic
+{	
+margin-bottom: 100px;	
+
+}
+
+.circulo-img{
+
+	display: flex;
+	justify-content: center;
+	margin:25px;
+	transition:all 1s linear;
+
+}
+
+.circulo-img img{
+
+	display: block;
+	width: 125px;
+	height: 125px;
+	border-radius:50%;
+}
+
+#cod-prestamos{
+
+font-weight: bold;
+font-size: 1.2rem;
+
+}
+
+/* Padding para botones */
+
+.pagarpre{
+
+	padding:15px 52px;
+}
+
+/* boton en prestamos confirmado*/
+.pcc{
+
+padding:15px 46px;
+
+}
+
+/* boton en transfer confirmado*/
+
+.ctr{
+
+padding:15px 67.7px;
+
+}
+
+
+.userpass-error{
+
+
+	width: 100%;
+	text-align: center;
+	
+}
