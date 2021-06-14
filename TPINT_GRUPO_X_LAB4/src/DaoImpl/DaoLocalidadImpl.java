@@ -22,8 +22,7 @@ public class DaoLocalidadImpl implements DaoLocalidad{
 			Connection conexion = Conexion.getConexion().getSQLConexion();
 			Statement st = conexion.createStatement();
 
-			ResultSet rs = st.executeQuery(
-					"select locId, locDescripcion, loc_pvcId from localidad");
+			ResultSet rs = st.executeQuery("select locId, locDescripcion, loc_pvcId from localidad");
 			while (rs.next()) {
 				Localidad local= new Localidad();
 				local.setId_pvc(rs.getInt("loc_pvcId"));

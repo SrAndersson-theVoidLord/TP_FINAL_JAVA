@@ -22,8 +22,7 @@ public class DaoProvinciaImpl implements DaoProvincia {
 			Connection conexion = Conexion.getConexion().getSQLConexion();
 			Statement st = conexion.createStatement();
 
-			ResultSet rs = st.executeQuery(
-					"select pvcId, pvcDescripcion from provincia order by pvcDescripcion");
+			ResultSet rs = st.executeQuery("select pvcId, pvcDescripcion from provincia order by pvcDescripcion");
 			while (rs.next()) {
 				Provincia provinciart = new Provincia();
 				provinciart.setId_provincia(rs.getInt("pvcId"));

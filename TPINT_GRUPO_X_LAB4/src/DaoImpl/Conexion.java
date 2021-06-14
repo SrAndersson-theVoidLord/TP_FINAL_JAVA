@@ -13,7 +13,7 @@ public class Conexion {
 	{
 		try
 		{
-			this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdbancos?serverTimezone=UTC","root","ROOT");
+			this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdbancos?serverTimezone=UTC","root","root");
 			this.connection.setAutoCommit(false);
 		}
 		catch(Exception e)
