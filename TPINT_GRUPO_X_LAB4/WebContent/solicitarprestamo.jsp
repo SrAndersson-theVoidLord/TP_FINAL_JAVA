@@ -214,7 +214,7 @@
       $("#montoCuotaServlet").text(cuotaMensual.toFixed(2).toString());
       $("#montoFinalServlet").text(montoFinal.toFixed(2).toString());
       
-      //
+      
       
 
     });

@@ -1,3 +1,4 @@
+<%@page import="com.mysql.jdbc.jdbc2.optional.SuspendableXAConnection"%>
 <%@page import="javax.swing.JOptionPane"%>
 <%@page import="Entidades.Cuenta"%>
 <%@page import="java.util.ArrayList"%>
