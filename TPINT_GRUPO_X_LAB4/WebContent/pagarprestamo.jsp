@@ -11,7 +11,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>Trustbank</title>
+	<title>FRGPbank</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 	<!-- Bootstrap -->
@@ -22,7 +22,7 @@
 	<!-- logo y estilos css personales -->
 	<link rel="stylesheet" media="screen" href="css/estilos_clientes.css">
   <link rel="stylesheet" media="screen" href="css/simple-sidebar.css">
-	<link rel="icon" type="text/css" href="img/logofenix.ico">
+	<link rel="icon" type="text/css" href="img/moneda-oro.ico">
 
 	<!-- Fuentes de Google -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -33,8 +33,8 @@
 <!-- header -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm">
   <a class="navbar-brand" href="usuario.html">
-    <img src="img/logofenix.png" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
-    T r u s t b a n k
+    <img src="img/moneda-oro.jpg" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
+    F R G P b a n k
   </a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -78,20 +78,6 @@
     <h3>Listado de prestamos</h3>
 
 
-<!-- 
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Ordenar
-  </button>
-  <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Todos</a>
-    <a class="dropdown-item" href="#">Fecha de venc</a>
-    <a class="dropdown-item" href="#">Cuota</a>
-  </div>
-</div> -->
-
-
-
   </div>
 
   </div>
@@ -131,10 +117,10 @@
       						Date fecha  = p.getFecha_Alta();
 						 	int dias = (int)(p.getPlazo_Meses()-p.getCuotas_Restantes()+1)*30;
 						 	 Calendar calendar = Calendar.getInstance();
-						 	 calendar.setTime(fecha); // Configuramos la fecha que se recibe
-      						 calendar.add(Calendar.DAY_OF_YEAR, dias);  // numero de días a añadir, o restar en caso de días<0
+						 	 calendar.setTime(fecha); 
+      						 calendar.add(Calendar.DAY_OF_YEAR, dias); 
       						 
-      						 calendar.getTime(); // Devuelve el objeto Date con los nuevos días añadidos
+      						 calendar.getTime(); 
       						 
       						SimpleDateFormat dateOnly = new SimpleDateFormat("dd/MM/yyyy"); 
       						dateOnly.format(calendar.getTime()); 
@@ -201,7 +187,7 @@
   </div>
   
 </td>
-      <!-- inicia parte de boton pagar  <button type="button" class="btn btn-dark">Pagar</button> -->
+    
      
    
      						 <td>
@@ -247,9 +233,6 @@
            
       <!-- finaliza parte de boton pagar -->
       
-      
-   
-    
   				
 
   </tbody>
