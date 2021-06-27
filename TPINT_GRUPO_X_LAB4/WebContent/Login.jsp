@@ -39,7 +39,7 @@
 				</div>
 				<label id="lblpass" class="msjerror" style="opacity: 0">Complete
 					el campo</label> <input type="submit" id="btning" name="btnIngresar"
-					class="btn w-100 btn-warning rounded-pill mt-5" value="Ingresar">
+					class="btn w-100 btn-primary rounded-pill mt-3" value="Ingresar">
 			</form>
 		</div>
 	</div>

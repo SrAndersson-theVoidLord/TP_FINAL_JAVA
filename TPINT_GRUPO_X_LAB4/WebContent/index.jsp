@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>Trustbank</title>
+	<title>FRGPbank</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 	
 	<!-- logo y estilos css personales -->
 	<link rel="stylesheet" media="screen" href="css/estilos_clientes.css">
-	<link rel="icon" type="text/css" href="img/logofenix.ico">
+	<link rel="icon" type="text/css" href="img/moneda-oro.ico">
 
 	<!-- Fuentes de Google -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -22,8 +22,8 @@
 	<!-- header -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm">
 	<a class="navbar-brand" href="usuario.html">
-    <img src="img/logofenix.png" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
-    T r u s t b a n k
+    <img src="img/moneda-oro.jpg" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
+    F R G P b a n k
   </a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -53,30 +53,30 @@
   	<!-- primera imagen -->
     <div class="carousel-item active">
 
-      <img class="d-block w-100" src="img/homeof.jpg" alt="First slide">
+      <img class="d-block w-100" src="img/Bienvenido.jpg" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
     <h2>¡Bienvenido!</h2>
-    <p id="parrafo-registro">¡Vivi la experiencia trust bank!</p><br>
+    <p id="parrafo-registro">Vivi la mejor experiencia</p><br>
     <a class="btn-registro" href="login.html">Ingresar</a>
     <div class="separacion"></div>
   </div>
     </div>
     <!-- segunda imagen -->
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/grupo1.jpg" alt="Second slide">
+      <img class="d-block w-100" src="img/Prestamos.jpg" alt="Second slide">
       <div class="carousel-caption d-none d-md-block">
     <h2>¡Prestamos personales!</h2>
-    <p id="parrafo-registro">¡No que quedes con las ganas!</p><br>
+    <p id="parrafo-registro">Prestamos sin problemas</p><br>
     <a class="btn-registro" href="prestamos.html">Solicitar</a>
     <div class="separacion"></div>
   </div>
     </div>
     <!-- tercera imagen -->
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/note1.jpg" alt="Third slide">
+      <img class="d-block w-100" src="img/Transferencias.jpg" alt="Third slide">
       <div class="carousel-caption d-none d-md-block">
     <h2>¡Trasferencias!</h2>
-    <p id="parrafo-registro">¡Tranferir dinero nunca fue tan fácil!</p><br>
+    <p id="parrafo-registro">Hace tus transferencias ya</p><br>
     <a class="btn-registro" href="transferencias.html">Tranferir</a>
     <div class="separacion"></div>
   </div>
@@ -101,15 +101,15 @@
    <div class="content-contac">
     <div class="lugar">
     <span class="fas fa-map-marker-alt"></span> 
-    <span class="text">Buenos Aires, Argentina</span>
+    <span class="text">Gral. Pacheco (Tigre), Buenos Aires, Argentina</span>
     </div>
     <div class="lugar">
     <span class="fas fa-phone-alt"></span>  
-    <span class="text">+54 11-3366-2233</span>
+    <span class="text">(5411) 4740-0216</span>
     </div>
     <div class="lugar">
     <span class="fas fa-envelope"></span> 
-    <span class="text">info@trustbank.com</span>
+    <span class="text">FRGPbank_info@gmail.com</span>
     </div>
    </div>
 </div>
@@ -121,7 +121,7 @@
 <div class="container-footer">
 
 <p>
-©Copyright - Pagina Web Realizada por Grupo 1 UTN FRGP. TODOS LOS DERECHOS RESERVADOS.
+-----------------------------------------------------------------------------------------
 </p>	
 </div>
 

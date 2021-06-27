@@ -318,7 +318,7 @@
 
 									</select> <label for="año1">del Año: </label> <select name="anio1">
 										<option value="0">--Seleccione el Año--</option>
-										<option value="2020">2020</option>
+										<option value="2021">2021</option>
 							
 									</select>
 
@@ -340,7 +340,7 @@
 										<option value="12">Diciembre</option>
 									</select> <label for="anios2"> del Año</label> <select name="anio2">
 										<option value="0">--Seleccione el Año--</option>
-										<option value="2020">2020</option>
+										<option value="2021">2021</option>
 					
 
 									</select>

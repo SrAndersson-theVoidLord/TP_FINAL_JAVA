@@ -8,7 +8,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>Trustbank</title>
+	<title>FRGPbank</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 	<!-- Bootstrap -->
@@ -19,7 +19,7 @@
 	<!-- logo y estilos css personales -->
 	<link rel="stylesheet" media="screen" href="css/estilos_clientes.css">
   <link rel="stylesheet" media="screen" href="css/simple-sidebar.css">
-	<link rel="icon" type="text/css" href="img/logofenix.ico">
+	<link rel="icon" type="text/css" href="img/moneda-oro.ico">
 
 	<!-- Fuentes de Google -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
