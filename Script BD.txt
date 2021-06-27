@@ -193,28 +193,28 @@ VALUES ('29334899','16-29334899-6','Luciano','luc33',2,'Luciano','Ruiz','Hombre'
 -- CUENTAS -- 
 
 INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550705,1,'28556744','8216262','2020-10-11'),(523567,2,'28556744','8214362','2020-10-11');
+ VALUES (550705,1,'28556744','8216262','2021-10-11'),(523567,2,'28556744','8214362','2021-10-11');
  
  INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550706,1,'25556989','8216263','2020-10-12'),(523568,2,'25556989','8214363','2020-10-12');
+ VALUES (550706,1,'25556989','8216263','2021-10-12'),(523568,2,'25556989','8214363','2021-10-12');
  
  INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550707,1,'27557444','8216264','2020-09-13'),(523569,2,'27557444','8214364','2020-09-13');
+ VALUES (550707,1,'27557444','8216264','2021-09-13'),(523569,2,'27557444','8214364','2021-09-13');
  
  INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550708,1,'22456778','8216265','2020-11-09'),(523570,2,'22456778','8214365','2020-11-09'),(550709,1,'22456778','8214366','2020-11-09');
+ VALUES (550708,1,'22456778','8216265','2021-11-09'),(523570,2,'22456778','8214365','2021-11-09'),(550709,1,'22456778','8214366','2021-11-09');
  
  INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550710,1,'28380245','8216267','2020-11-05'),(523571,2,'28380245','5214336','2020-11-05'),(550711,1,'28380245','8214368','2020-11-05');
+ VALUES (550710,1,'28380245','8216267','2021-11-05'),(523571,2,'28380245','5214336','2021-11-05'),(550711,1,'28380245','8214368','2021-11-05');
  
  INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550712,1,'34578904','8216269','2020-05-05');
+ VALUES (550712,1,'34578904','8216269','2021-05-05');
  
  INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550713,1,'20875555','9216270','2020-06-06');
+ VALUES (550713,1,'20875555','9216270','2021-06-06');
  
  INSERT INTO Cuentas (Nro_Cuenta_C,Tipo_Cuenta_C,Dni_C,CBU_C,Fecha_Alta)
- VALUES (550714,1,'32870494','6216271','2020-06-06');
+ VALUES (550714,1,'32870494','6216271','2021-06-06');
  
 -- TIPOS DE MOVIMIENTOS --
 
@@ -229,92 +229,92 @@ INSERT INTO Tipo_Movimientos (Tipo_Movimientos_TM,Descripcion_TM)
 -- alta de cajas de ahorro --
 
  INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550705,1,10000,'2020-10-11','Se da de alta cuenta nueva');
+ VALUES (550705,1,10000,'2021-10-11','Se da de alta cuenta nueva');
  INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550706,1,10000,'2020-10-12','Se da de alta cuenta nueva');
+ VALUES (550706,1,10000,'2021-10-12','Se da de alta cuenta nueva');
   INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550707,1,10000,'2020-09-13','Se da de alta cuenta nueva');
+ VALUES (550707,1,10000,'2021-09-13','Se da de alta cuenta nueva');
    INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550708,1,10000,'2020-11-09','Se da de alta cuenta nueva');
+ VALUES (550708,1,10000,'2021-11-09','Se da de alta cuenta nueva');
     INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550709,1,10000,'2020-11-09','Se da de alta cuenta nueva');
+ VALUES (550709,1,10000,'2021-11-09','Se da de alta cuenta nueva');
      INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550710,1,10000,'2020-11-05','Se da de alta cuenta nueva');
+ VALUES (550710,1,10000,'2021-11-05','Se da de alta cuenta nueva');
       INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550711,1,10000,'2020-11-05','Se da de alta cuenta nueva');
+ VALUES (550711,1,10000,'2021-11-05','Se da de alta cuenta nueva');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550712,1,10000,'2020-05-05','Se da de alta cuenta nueva');
+ VALUES (550712,1,10000,'2021-05-05','Se da de alta cuenta nueva');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550713,1,10000,'2020-06-06','Se da de alta cuenta nueva');
+ VALUES (550713,1,10000,'2021-06-06','Se da de alta cuenta nueva');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550714,1,10000,'2020-06-06','Se da de alta cuenta nueva');
+ VALUES (550714,1,10000,'2021-06-06','Se da de alta cuenta nueva');
  
  -- alta de cuentas corrientes --
  
  INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523567,1,10000,'2020-10-11','Se da de alta cuenta nueva');
+ VALUES (523567,1,10000,'2021-10-11','Se da de alta cuenta nueva');
  INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523568,1,10000,'2020-10-12','Se da de alta cuenta nueva');
+ VALUES (523568,1,10000,'2021-10-12','Se da de alta cuenta nueva');
   INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523569,1,10000,'2020-09-13','Se da de alta cuenta nueva');
+ VALUES (523569,1,10000,'2021-09-13','Se da de alta cuenta nueva');
    INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523570,1,10000,'2020-11-09','Se da de alta cuenta nueva');
+ VALUES (523570,1,10000,'2021-11-09','Se da de alta cuenta nueva');
     INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523571,1,10000,'2020-11-05','Se da de alta cuenta nueva');
+ VALUES (523571,1,10000,'2021-11-05','Se da de alta cuenta nueva');
     
  -- prestamos -- 
        INSERT INTO Movimientos(Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550711,2,25000,'2020-11-06','Se da de alta nuevo prestamo');
+ VALUES (550711,2,25000,'2021-11-06','Se da de alta nuevo prestamo');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550712,2,15000,'2020-05-12','Se da de alta nuevo prestamo');
+ VALUES (550712,2,15000,'2021-05-12','Se da de alta nuevo prestamo');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550713,2,50000,'2020-07-10','Se da de alta nuevo prestamoa');
+ VALUES (550713,2,50000,'2021-07-10','Se da de alta nuevo prestamoa');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550714,2,30000,'2020-10-10','Se da de alta nuevo prestamo');
+ VALUES (550714,2,30000,'2021-10-10','Se da de alta nuevo prestamo');
      INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523571,2,22000,'2020-11-09','Se da de alta nuevo prestamo');
+ VALUES (523571,2,22000,'2021-11-09','Se da de alta nuevo prestamo');
  
  -- pago de prestamos -- 
  
        INSERT INTO Movimientos(Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550712,3,2500,'2020-06-12','Pago de cuota 1');
+ VALUES (550712,3,2500,'2021-06-12','Pago de cuota 1');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550712,3,2500,'2020-07-12','Pago de cuota 2');
+ VALUES (550712,3,2500,'2021-07-12','Pago de cuota 2');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550712,3,2500,'2020-08-12','Pago de cuota 3');
+ VALUES (550712,3,2500,'2021-08-12','Pago de cuota 3');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550712,3,2500,'2020-09-12','Pago de cuota 4');
+ VALUES (550712,3,2500,'2021-09-12','Pago de cuota 4');
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550712,3,2500,'2020-10-12','Pago de cuota 5');
+ VALUES (550712,3,2500,'2021-10-12','Pago de cuota 5');
  
  
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550713,3,8333,'2020-08-10','Pago de cuota 1');
+ VALUES (550713,3,8333,'2021-08-10','Pago de cuota 1');
         INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550713,3,8333,'2020-09-10','Pago de cuota 2');
+ VALUES (550713,3,8333,'2021-09-10','Pago de cuota 2');
    INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550713,3,8333,'2020-10-10','Pago de cuota 3');
+ VALUES (550713,3,8333,'2021-10-10','Pago de cuota 3');
     INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550713,3,8333,'2020-11-10','Pago de cuota 4');
+ VALUES (550713,3,8333,'2021-11-10','Pago de cuota 4');
  
        INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550714,3,5000,'2020-11-10','Pago de cuota 1');
+ VALUES (550714,3,5000,'2021-11-10','Pago de cuota 1');
 
  -- transferencias -- 
   INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550705,4,1000,'2020-10-15','Pago de honorarios');
+ VALUES (550705,4,1000,'2021-10-15','Pago de honorarios');
  INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550706,4,2300,'2020-10-15','Cuota');
+ VALUES (550706,4,2300,'2021-10-15','Cuota');
   INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550707,4,4000,'2020-10-13','Pago de expensas');
+ VALUES (550707,4,4000,'2021-10-13','Pago de expensas');
    INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550708,4,250,'2020-11-09','No declara');
+ VALUES (550708,4,250,'2021-11-09','No declara');
     INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (550709,4,8500,'2020-11-10','Pago de alquiler');
+ VALUES (550709,4,8500,'2021-11-10','Pago de alquiler');
   INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523567,4,1200,'2020-10-11','Otros');
+ VALUES (523567,4,1200,'2021-10-11','Otros');
  INSERT INTO Movimientos (Nro_Cuenta_M,Tipo_Movimiento_M,Importe_M,Fecha_M,Mensaje_M)
- VALUES (523568,4,5000,'2020-10-30','Pago de servicios');
+ VALUES (523568,4,5000,'2021-10-30','Pago de servicios');
 
 -- PRESTAMOS --
 
@@ -322,32 +322,32 @@ INSERT INTO Tipo_Movimientos (Tipo_Movimientos_TM,Descripcion_TM)
 -- cuanto se genera el pago de una cuota se setean las cuotas restantes y el monto restante a pagar --
 
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (550711,'2020-11-06',25000,50000,12,4167,50000,12);
+VALUES (550711,'2021-11-06',25000,50000,12,4167,50000,12);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (550712,'2020-05-12',15000,30000,12,2500,17500,7);
+VALUES (550712,'2021-05-12',15000,30000,12,2500,17500,7);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (550713,'2020-07-10',50000,100000,12,8333,66668,8);
+VALUES (550713,'2021-07-10',50000,100000,12,8333,66668,8);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (550714,'2020-10-10',30000,60000,12,5000,55000,11);
+VALUES (550714,'2021-10-10',30000,60000,12,5000,55000,11);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (523571,'2020-11-09',22000,44000,12,3666,44000,12);
+VALUES (523571,'2021-11-09',22000,44000,12,3666,44000,12);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (523571,'2020-11-09',22000,44000,12,3666,44000,12);
+VALUES (523571,'2021-11-09',22000,44000,12,3666,44000,12);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (550707,'2019-10-10',3000000,6000000,12,500000,500000,1);
+VALUES (550707,'2021-10-10',3000000,6000000,12,500000,500000,1);
 
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (550707,'2020-10-10',30000,60000,12,5000,55000,11);
+VALUES (550707,'2021-10-10',30000,60000,12,5000,55000,11);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (523569,'2020-10-10',30000,60000,12,5000,55000,11);
+VALUES (523569,'2021-10-10',30000,60000,12,5000,55000,11);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (523567,'2020-11-09',22000,44000,12,3666,44000,12);
+VALUES (523567,'2021-11-09',22000,44000,12,3666,44000,12);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (550707,'2020-6-10',30000,60000,12,5000,55000,11);
+VALUES (550707,'2021-6-10',30000,60000,12,5000,55000,11);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (523569,'2020-6-12',30000,60000,12,5000,55000,11);
+VALUES (523569,'2021-6-12',30000,60000,12,5000,55000,11);
 INSERT INTO Prestamos (Nro_Cuenta,Fecha_Alta,Importe_Prestamo,Importe_Total_Pagar,Plazo_Meses,Monto_Mensual,Saldo_Restante,Cuotas_Restantes)
-VALUES (523567,'2020-7-09',22000,44000,12,3666,44000,12);
+VALUES (523567,'2021-7-09',22000,44000,12,3666,44000,12);
 
 INSERT INTO provincia (pvcId , pvcDescripcion, pvc_pasId) VALUES (1, 'BUENOS AIRES', 1);
 INSERT INTO provincia (pvcId , pvcDescripcion, pvc_pasId) VALUES (2, 'CATAMARCA', 1);
