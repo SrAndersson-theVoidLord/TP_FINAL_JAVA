@@ -52,7 +52,7 @@ public class DaoCuentaImpl implements DaoCuentas {
 
     }
 
-    //lista cuentas dadsad e alta
+    //lista cuentas dadas de alta
 	@Override
 	public ArrayList<Cuenta> listarCuentas() {
 	

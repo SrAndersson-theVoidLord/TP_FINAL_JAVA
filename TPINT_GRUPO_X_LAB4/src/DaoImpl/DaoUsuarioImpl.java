@@ -335,7 +335,7 @@ public class DaoUsuarioImpl implements DaoUsuario {
                 encontrada.setContrasenia(rs.getString("Password_U"));
                 encontrada.setNombre(rs.getString("Nombre_U"));
                 encontrada.setApellido(rs.getString("Apellido_U"));
-                encontrada.setNacionalidad("Nacionalidad_U");
+                encontrada.setNacionalidad(rs.getString("Nacionalidad_U"));
                 encontrada.setLocalidad(rs.getString("Localidad_U"));
                 encontrada.setProvincia(rs.getString("Provincia_U"));
             }

@@ -83,7 +83,7 @@
     <h3>¿Como querés continuar?</h3>
   <div class="opcion-envio">
 <a class="btn-envio-cp ctr" href="ServletMovimientos?cuentauno=1" name="btncp">Cuentas</a>
-  <a class="btn-envio-cp" href="ServletCuenta?cuenta=1" name="btnca">Transferencias</a>
+  <a class="btn-envio-cp" href="ServletCuentas?cuenta=1" name="btnca">Transferencias</a>
   </div>   
 
   </div>
