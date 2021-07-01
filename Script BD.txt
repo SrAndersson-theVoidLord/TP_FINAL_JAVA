@@ -134,10 +134,10 @@ CREATE TABLE `Prestamos`
  
 -- admins --
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('35987123','20-35987123-5','admin','admin',1,'Matias','Fernandez','Hombre','Argentino','José Hernandez 512','Villa Ballester','Buenos Aires','1990-12-31','4556-9807','armandogon@trustbank.com');
+VALUES ('35987123','20-35987123-5','admin','admin',1,'Matias','Fernandez','Hombre','Argentino','José Hernandez 512','Villa Ballester','Buenos Aires','1990-12-31','4556-9807','matifer@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('32365777','20-32365777-5','soyadm','soyadm',1,'Natalia','Font','Mujer','Argentina','Cerrito 5332','CABA','Buenos Aires','1993-10-05','4334-9556','natifont@trustbank.com');
+VALUES ('32365777','20-32365777-5','soyadm','soyadm',1,'Natalia','Font','Mujer','Argentina','Cerrito 5332','CABA','Buenos Aires','1993-10-05','4334-9556','natifont@gmail.com');
 
 -- clientes --
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
