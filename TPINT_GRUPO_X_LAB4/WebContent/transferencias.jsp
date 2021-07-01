@@ -105,7 +105,7 @@
 <div class="monto">
   <h4>Monto a enviar</h4>
   <!-- Dentro del place Holder va el monto total disponible de la cuenta que selecciono -->
-  <input type="text" name="monto-transfer" placeholder="$3.000,00">
+  <input type="text" name="monto-transfer" placeholder="$4.000,00">
 </div>
 <br>
 <!-- Destinatario -->

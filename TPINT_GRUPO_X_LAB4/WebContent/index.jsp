@@ -57,7 +57,7 @@
       <div class="carousel-caption d-none d-md-block">
     <h2>¡Bienvenido!</h2>
     <p id="parrafo-registro">Vivi la mejor experiencia</p><br>
-    <a class="btn-registro" href="login.html">Ingresar</a>
+    <a class="btn-registro" href="Login.jsp">Ingresar</a>
     <div class="separacion"></div>
   </div>
     </div>

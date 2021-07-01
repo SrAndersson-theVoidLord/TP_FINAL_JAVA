@@ -23,18 +23,6 @@
 		<jsp:include page="sidebarAdmin.html"></jsp:include>
 		<div id="layoutSidenav_content">
 			<main>
-			<%if(request.getAttribute("admin") != null){
-                
-            }
-else{
-	response.sendRedirect("AccesoDenegado.jsp");    
-    
-            }
-
-%>
-			<%if(request.getAttribute("admin") == ""){
-				response.sendRedirect("AccesoDenegado.jsp");
-			}%>
 			
 			<div class="container-fluid">
 				<h1 class="mt-4">Menú Administrador</h1>
