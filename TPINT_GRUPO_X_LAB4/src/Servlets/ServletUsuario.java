@@ -98,106 +98,7 @@ public class ServletUsuario extends HttpServlet {
 				}
 		}
 
-		// Login de usuario // // verifica si es admin o cliente tambien //
-				int ingreso = 0; // 0 no lo encontro | -2 dos campos vacios | -1 usuario vacio | -3 contra vacia
-				boolean ingresa = true;
-				
-				if (request.getParameter("btnIngresar") != null) {
-					
-					if(request.getParameter("usuario") == "" || request.getParameter("contrasenia") == "" ) {
-					
-						RequestDispatcher rd = request.getRequestDispatcher("camposv.jsp");
-						rd.forward(request, response);
-					}
-					
-								// si no hay ningun campo vacio se procede a buscar en la BD
-								if(ingresa==true){
-									
-									if(request.getParameter("usuario") != "" && request.getParameter("contrasenia") != "" ){
-										
-										Usuario usuario = new Usuario();
-										NegocioUsuarioImpl user = new NegocioUsuarioImpl();
-										
-										usuario.setUsuario(request.getParameter("usuario"));
-										usuario.setContrasenia(request.getParameter("contrasenia"));
-										
-										if(user.existeUsuarioContraAdmin(usuario) == true) 
-										{
-											// se logueo un admin
-											
-											request.setAttribute("admin",1);
-						
-											request.getSession().setAttribute("userconect", usuario);
-									
-											request.setAttribute("uc", usuario);
-											RequestDispatcher rd = request.getRequestDispatcher("index_admin.jsp");
-									
-											rd.forward(request, response);
-											
-										}
-										
-										else if(user.existeUsuarioContraCliente(usuario) == true) 
-										{
-										
-											// se loguea un cliente
-											request.getSession().setAttribute("userconect", usuario);
-											
-											// le paso los datos de la primer cuenta que le figura//
-											Cuenta cuentauno = new Cuenta();
-											NegocioCuenta usercuenta = new NegocioCuentaImpl();
-											
-											// con el nombre de usuario voy a buscar el usuario completo //
-											// y con el usuario completo busco su primer cuenta //
-											Usuario userSession = (Usuario) request.getSession().getAttribute("userconect");
-								
-											usuario = user.BuscarUsuario(userSession);
-									
-									
-											
-											cuentauno = usercuenta.BuscarCuentaM(usuario,1);
-											
-										
-											
-											// si la cuenta viene en null le paso datos en cero
-												if(cuentauno.getDni() == null && cuentauno.getCBU_Cuenta() == null) {
-												
-												cuentauno.setSaldo_Cuenta(0000);;
-												cuentauno.setCBU_Cuenta("0000");
-												cuentauno.setNro_Cuenta(0000);
-											}
-												// Guardo el numero de cuenta en una variable session para luego usarla
-												request.getSession().setAttribute("cuentauser", cuentauno);
-											
-											
-											// cargo los movimientos de la cuenta 1 
-											NegocioMovimientosImpl movi = new NegocioMovimientosImpl();
-											ArrayList<Movimientos> listaMovimientos = movi.listarMovimientosPorCuenta(cuentauno);
-											request.setAttribute("listaMov", listaMovimientos);
-										
-											// cargo la cuenta uno para usar en el front
-											request.setAttribute("cuentauno", cuentauno);
-
-											RequestDispatcher rd = request.getRequestDispatcher("iniciousuario.jsp");
-											rd.forward(request, response);
-											
-									
-											
-										}
-										
-										else 
-										{
-											// usuario y/o contraseña incorrectas
-											
-											RequestDispatcher rd = request.getRequestDispatcher("errordeingreso.jsp");
-											rd.forward(request, response);
-										}
-										
-								}
-									
-									
-								}
-										
-				} // fin btn ingresar != null
+		
 				
 				// traer el perfil completo del usuario //
 		        if(request.getParameter("perfil") != null) {
@@ -380,6 +281,106 @@ public class ServletUsuario extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		// Login de usuario // // verifica si es admin o cliente tambien //
+		int ingreso = 0; // 0 no lo encontro | -2 dos campos vacios | -1 usuario vacio | -3 contra vacia
+		boolean ingresa = true;
+		
+		if (request.getParameter("btnIngresar") != null) {
+			
+			if(request.getParameter("usuario") == "" || request.getParameter("contrasenia") == "" ) {
+			
+				RequestDispatcher rd = request.getRequestDispatcher("camposv.jsp");
+				rd.forward(request, response);
+			}
+			
+						// si no hay ningun campo vacio se procede a buscar en la BD
+						if(ingresa==true){
+							
+							if(request.getParameter("usuario") != "" && request.getParameter("contrasenia") != "" ){
+								
+								Usuario usuario = new Usuario();
+								NegocioUsuarioImpl user = new NegocioUsuarioImpl();
+								
+								usuario.setUsuario(request.getParameter("usuario"));
+								usuario.setContrasenia(request.getParameter("contrasenia"));
+								
+								if(user.existeUsuarioContraAdmin(usuario) == true) 
+								{
+									// se logueo un admin
+									
+									request.setAttribute("admin",1);
+				
+									request.getSession().setAttribute("userconect", usuario);
+							
+									request.setAttribute("uc", usuario);
+									RequestDispatcher rd = request.getRequestDispatcher("index_admin.jsp");
+							
+									rd.forward(request, response);
+									
+								}
+								
+								else if(user.existeUsuarioContraCliente(usuario) == true) 
+								{
+								
+									// se loguea un cliente
+									request.getSession().setAttribute("userconect", usuario);
+									
+									// le paso los datos de la primer cuenta que le figura//
+									Cuenta cuentauno = new Cuenta();
+									NegocioCuenta usercuenta = new NegocioCuentaImpl();
+									
+									// con el nombre de usuario voy a buscar el usuario completo //
+									// y con el usuario completo busco su primer cuenta //
+									Usuario userSession = (Usuario) request.getSession().getAttribute("userconect");
+						
+									usuario = user.BuscarUsuario(userSession);
+							
+							
+									
+									cuentauno = usercuenta.BuscarCuentaM(usuario,1);
+									
+								
+									
+									// si la cuenta viene en null le paso datos en cero
+										if(cuentauno.getDni() == null && cuentauno.getCBU_Cuenta() == null) {
+										
+										cuentauno.setSaldo_Cuenta(0000);;
+										cuentauno.setCBU_Cuenta("0000");
+										cuentauno.setNro_Cuenta(0000);
+									}
+										// Guardo el numero de cuenta en una variable session para luego usarla
+										request.getSession().setAttribute("cuentauser", cuentauno);
+									
+									
+									// cargo los movimientos de la cuenta 1 
+									NegocioMovimientosImpl movi = new NegocioMovimientosImpl();
+									ArrayList<Movimientos> listaMovimientos = movi.listarMovimientosPorCuenta(cuentauno);
+									request.setAttribute("listaMov", listaMovimientos);
+								
+									// cargo la cuenta uno para usar en el front
+									request.setAttribute("cuentauno", cuentauno);
+
+									RequestDispatcher rd = request.getRequestDispatcher("iniciousuario.jsp");
+									rd.forward(request, response);
+									
+							
+									
+								}
+								
+								else 
+								{
+									// usuario y/o contraseña incorrectas
+									
+									RequestDispatcher rd = request.getRequestDispatcher("errordeingreso.jsp");
+									rd.forward(request, response);
+								}
+								
+						}
+							
+							
+						}
+								
+		} // fin btn ingresar != null
 	}
 
 }

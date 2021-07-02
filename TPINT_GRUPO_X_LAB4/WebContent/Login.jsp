@@ -18,7 +18,7 @@
 		<div class="login-box">
 			<!-- <img src="img/logo.png" class="avatar" alt="Avatar Image"> -->
 			<h3 class="text-center pb-4">Ingreso</h3>
-			<form class="mt-4 rounded" action="ServletUsuario?btnIngresar" method="get">
+			<form class="mt-4 rounded" action="ServletUsuario?btnIngresar" method="post">
 				<!-- USERNAME INPUT -->
 				<div class="input-group">
 					<div class="input-group-prepend">

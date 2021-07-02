@@ -134,56 +134,56 @@ CREATE TABLE `Prestamos`
  
 -- admins --
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('35987123','20-35987123-5','admin','admin',1,'Matias','Fernandez','Hombre','Argentino','José Hernandez 512','Villa Ballester','Buenos Aires','1990-12-31','4556-9807','matifer@gmail.com');
+VALUES ('35987123','20-35987123-5','adm','adm',1,'Nicolas','Martinez','Hombre','Argentino','José Hernandez 512','Villa Ballester','Buenos Aires','1990-12-31','4889-9807','NicoM@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('32365777','20-32365777-5','soyadm','soyadm',1,'Natalia','Font','Mujer','Argentina','Cerrito 5332','CABA','Buenos Aires','1993-10-05','4334-9556','natifont@gmail.com');
+VALUES ('32365777','20-32365777-5','adm2','adm2',1,'Natalia','Hernandez','Mujer','Argentina','Cerrito 5332','CABA','Buenos Aires','1993-10-05','4586-9556','NataliaH@gmail.com');
 
 -- clientes --
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('32870494','20-32870494-6','javscript','dog123',2,'Javier','Hernandez','Hombre','Argentino','Marengo 6522','Villa Martelli','Buenos Aires','1987-11-10','4689-1260','javi2002@gmail.com');
+VALUES ('32870494','20-32870494-6','javih','j123',2,'Javier','Montenegro','Hombre','Argentino','Marengo 6522','Villa Martelli','Buenos Aires','1987-11-10','4689-1260','javiM@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('28380245','17-28380245-2','belustm','cat123',2,'Belen','Gimenez','Mujer','Argentina','Av los incas 5423','Devoto','Buenos Aires','1989-03-01','4234-7654','belustm@gmail.com');
+VALUES ('28380245','17-28380245-2','ana22','ana22',2,'Ana','Calderon','Mujer','Argentina','Av los incas 5423','Devoto','Buenos Aires','1989-03-01','4234-7654','anaC@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('29878594','20-29878594-6','Sofia23','sofi333',2,'Sofia','Reyes','Mujer','Argentina','Italia 2543','San Martin','Buenos Aires','2000-08-05','4766-6121','sofiareyes@gmail.com');
+VALUES ('29878594','20-29878594-6','mariaa','ant5',2,'Maria','Antares','Mujer','Argentina','Italia 2543','San Martin','Buenos Aires','2000-08-05','4766-6121','mariaA@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('37913882','20-37913882-6','gonzastm','gonzi24',2,'Gonzalo','Reyes','Hombre','Argentino','Mar del plata 1197','Del Viso','Buenos Aires','2000-11-15','4876-5454','gonzagenx@gmail.com');
+VALUES ('37913882','20-37913882-6','nahuel1','Gonzales2',2,'Nahuel','Gonzales','Hombre','Argentino','Mar del plata 1197','Del Viso','Buenos Aires','2000-11-15','4876-5454','nahuelG@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('20875555','10-20875555-7','Alexandra23','aossa',2,'Alexandra','Ossa','Mujer','Colombia','Av Medallin 1442','Antioquia','Medallin','1980-04-22','-','aossa@gmail.com');
+VALUES ('20875555','10-20875555-7','ale123','Asosa',2,'Alejandra','Sosa','Mujer','Colombia','Av Medallin 1442','Antioquia','Medallin','1980-04-22','-','alejandraS@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('16444555','20-16444555-6','juanci','jperez',2,'Juan','Perez','Hombre','Argentino','Av Corrientes 4422','Villa Crespo','Buenos Aires','1980-07-27','5566-7788','iamjp@gmail.com');
+VALUES ('16444555','20-16444555-6','braianM','bmartinez',2,'Braian','Martinez','Hombre','Argentino','Av Corrientes 4422','Villa Crespo','Buenos Aires','1980-07-27','5566-7788','braianM@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('28556744','20-28556744-5','ceci96','ceci96',2,'Cecilia','Martinez','Mujer','Argentina','Marcos sastre 3334','Villa Adelina','Buenos Aires','1985-12-15','4665-1234','cecilong@gmail.com');
+VALUES ('28556744','20-28556744-5','ceciruiz','ruiz1',2,'Cecilia','Ruiz','Mujer','Argentina','Marcos sastre 3334','Villa Adelina','Buenos Aires','1985-12-15','4665-1234','ceciliaR@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('34578904','19-34578904-8','Martin33','pvsz333',2,'Martin','Sanchez','Hombre','Argentino','Paraná 5262','Villa Adelina','Buenos Aires','1992-05-05','4222-7653','martinsanchez@gmail.com');
+VALUES ('34578904','19-34578904-8','adrianp','paredes123',2,'Adrian','Paredes','Hombre','Argentino','Paraná 5262','Villa Adelina','Buenos Aires','1992-05-05','4222-7653','adrianP@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('29006005','20-29006005-6','carito22','coco22',2,'Carolina','Dos Santos','Mujer','Argentina','Posadas 2342','Munro','Buenos Aires','1992-12-04','4234-1111','caro22@gmail.com');
+VALUES ('29006005','20-29006005-6','pauc','caba123',2,'Paulina','Caballero','Mujer','Argentina','Posadas 2342','Munro','Buenos Aires','1992-12-04','4234-1111','pauC@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('25556989','20-25556989-6','jero22','cmasmas',2,'Jeronimo','Diaz','Hombre','Argentino','Av 9 de julio 3322','CABA','Buenos Aires','1990-10-10','4124-0985','jeroval@gmail.com');
+VALUES ('25556989','20-25556989-6','marceb','b1234',2,'Marcelo','Berutti','Hombre','Argentino','Av 9 de julio 3322','CABA','Buenos Aires','1990-10-10','4124-0985','marceloB@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('20789054','20-35789054-3','adribtc','goeth',2,'Adrian','Jimenez','Hombre','Argentino','Av Maipu 2341','Olivos','Buenos Aires','1975-11-10','4359-1322','adribtc@gmail.com');
+VALUES ('20789054','20-35789054-3','axelnavarro','a1234',2,'Axel','Navarro','Hombre','Argentino','Av Maipu 2341','Olivos','Buenos Aires','1975-11-10','4359-1322','axelN@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('22456778','20-22456778-6','jimenut','loveanimal',2,'Jimena','Lopez','Mujer','Argentina','Av La Plata 6562','CABA','Buenos Aires','1995-04-03','4256-6765','jimerrhh@gmail.com');
+VALUES ('22456778','20-22456778-6','mara1','sosa12345',2,'Mara','Sosa','Mujer','Argentina','Av La Plata 6562','CABA','Buenos Aires','1995-04-03','4256-6765','maraS@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('23334567','20-23334567-6','Julianprog','juli88',2,'Julian','Acosta','Hombre','Argentino','Mariano Acosta 2332','Flores','Buenos Aires','1985-11-12','4556-7878','julianacosta@gmail.com');
+VALUES ('23334567','20-23334567-6','claudio23','tajes1',2,'Claudio','Tajes','Hombre','Argentino','Mariano Acosta 2332','Flores','Buenos Aires','1985-11-12','4556-7878','claudioT@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('27557444','21-27557444-4','Gema','gema123',2,'Gema','Garcia Godoy','Mujer','Argentina','Av San Martin 2522','Escobar','Buenos Aires','1984-09-12','4567-1346','ggodoy@gmail.com');
+VALUES ('27557444','21-27557444-4','erica55','erican',2,'Erica','Nuñez','Mujer','Argentina','Av San Martin 2522','Escobar','Buenos Aires','1984-09-12','4567-1346','ericaN@gmail.com');
 
 INSERT INTO Usuarios (Dni_U, Cuil_U,Username_U,Password_U,Tipo_U,Nombre_U,Apellido_U,Sexo_U,Nacionalidad_U,Direccion_U,Localidad_U,Provincia_U,Fecha_Nacimiento_U,Telefono_U,Mail_U)
-VALUES ('29334899','16-29334899-6','Luciano','luc33',2,'Luciano','Ruiz','Hombre','Argentino','Av Cabilod 3522','Palermo','Buenos Aires','1982-01-22','4344-3456','lruiz22@gmail.com');
+VALUES ('29334899','16-29334899-6','david6','recondo12',2,'David','Recondo','Hombre','Argentino','Av Cabilod 3522','Palermo','Buenos Aires','1982-01-22','4344-3456','davidR@gmail.com');
 
 -- TIPO DE CUENTAS -- 
 
