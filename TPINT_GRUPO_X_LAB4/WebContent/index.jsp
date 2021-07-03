@@ -21,7 +21,7 @@
 
 	<!-- header -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm">
-	<a class="navbar-brand" href="usuario.html">
+	<a class="navbar-brand" href="index.jsp">
     <img src="img/moneda-oro.jpg" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
     F R G P b a n k
   </a>
@@ -30,10 +30,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
   	<div class="navbar-nav ml-auto ml-auto text-center">
-      <a class="item-nav" href="usuario.html">INICIO</a>
-      <a class="item-nav" href="iniciousuario.html">HOME BANKING</a>
-      <a class="item-nav" href="perfilusuario.html"><i class="fas fa-user-circle"></i>
-		<a class="navbar-brand" href="index.html">${userconect.usuario}</a>
+      <a class="item-nav" href="index.jsp">INICIO</a>
+      <a class="item-nav"><i class="fas fa-user-circle"></i>
+		<a class="navbar-brand" href="index_usuario.jsp">${userconect.usuario}</a>
       
     </div>
   </div>
@@ -67,7 +66,7 @@
       <div class="carousel-caption d-none d-md-block">
     <h2>¡Prestamos personales!</h2>
     <p id="parrafo-registro">Prestamos sin problemas</p><br>
-    <a class="btn-registro" href="prestamos.html">Solicitar</a>
+    <a class="btn-registro" href="Login.jsp">Ingresar</a>
     <div class="separacion"></div>
   </div>
     </div>
@@ -77,7 +76,7 @@
       <div class="carousel-caption d-none d-md-block">
     <h2>¡Trasferencias!</h2>
     <p id="parrafo-registro">Hace tus transferencias ya</p><br>
-    <a class="btn-registro" href="transferencias.html">Tranferir</a>
+    <a class="btn-registro" href="Login.jsp">Ingresar</a>
     <div class="separacion"></div>
   </div>
     </div>
