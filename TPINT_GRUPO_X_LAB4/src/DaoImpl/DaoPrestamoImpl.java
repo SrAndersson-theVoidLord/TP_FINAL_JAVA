@@ -434,7 +434,7 @@ public class DaoPrestamoImpl implements DaoPrestamo {
 			Connection conexion = Conexion.getConexion().getSQLConexion();
 			Statement st = conexion.createStatement();
 
-			ResultSet rs = st.executeQuery("select * from prestamos p INNER JOIN cuentas c on p.Nro_Cuenta = c.Nro_Cuenta_C WHERE c.Dni_C = '"+user.getDni()+"' and p.Estado_Solicitud = 0");
+			ResultSet rs = st.executeQuery("select * from prestamos p INNER JOIN cuentas c on p.Nro_Cuenta = c.Nro_Cuenta_C WHERE c.Dni_C = '"+user.getDni()+"' and p.Estado_Solicitud = 0 and p.Estado_Prestamo = 1");
 			
 			while (rs.next()) {
 					
