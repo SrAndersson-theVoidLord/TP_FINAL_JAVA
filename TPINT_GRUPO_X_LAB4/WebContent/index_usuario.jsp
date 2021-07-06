@@ -24,7 +24,7 @@
 	<!-- header -->
 	<nav
 		class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm">
-	<a class="navbar-brand" href="usuario.html"> <img
+	<a class="navbar-brand" href="index.jsp"> <img
 		src="img/moneda-oro.jpg" width="77" height="77"
 		class="d-inline-block align-center" alt="Logo banco"> F R G P
 		b a n k
@@ -37,7 +37,7 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 		<div class="navbar-nav ml-auto ml-auto text-center">
-			<a class="item-nav" href="usuario.html">HOME</a> <a class="item-nav" href="ServletUsuario?cerrarSession=1">CERRAR SESIÓN</a>
+			<a class="item-nav" href="index.jsp">INICIO</a> <a class="item-nav" href="ServletUsuario?cerrarSession=1">CERRAR SESIÓN</a>
 			<!-- meter icono con usuario logueado -->
 		</div>
 	</div>
@@ -50,16 +50,16 @@
 		<!-- Sidebar -->
 		<div class="bg-light border-right" id="sidebar-wrapper">
 			<div class="sidebar-heading">
-				<i class="fas fa-user-circle"></i> Nombre de usuario
+				<i class="fas fa-user-circle"></i> ${userconect.usuario}
 			</div>
 			<div class="list-group list-group-flush">
 
-				<a href="#" class="list-group-item list-group-item-action bg-light"><i
-					class="fas fa-wallet"></i> Historial de cuentas</a> <a href="#"
+				<a href="ServletMovimientos?cuentauno=1" class="list-group-item list-group-item-action bg-light"><i
+					class="fas fa-wallet"></i> Cuentas</a> <a href="ServletCuentas?cuenta=1"
 					class="list-group-item list-group-item-action bg-light"><i
-					class="fas fa-exchange-alt"></i> Transferencias</a> <a href="#"
+					class="fas fa-exchange-alt"></i> Transferencias</a> <a href="prestamos.jsp"
 					class="list-group-item list-group-item-action bg-light"><i
-					class="fas fa-money-bill-alt"></i> Prestamos</a> <a href="#"
+					class="fas fa-money-bill-alt"></i> Prestamos</a> <a href="perfilusuario.jsp"
 					class="list-group-item list-group-item-action bg-light"><i
 					class="fas fa-address-card"></i> Información personal</a>
 			</div>
@@ -70,7 +70,7 @@
 
 
 
-			<h1>Bienvenido!</h1>
+			<h1>Bienvenido/a ${userconect.nombre} ${userconect.apellido}!</h1>
 
 
 		</div>

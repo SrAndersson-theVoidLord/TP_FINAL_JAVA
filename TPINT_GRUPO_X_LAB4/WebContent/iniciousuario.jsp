@@ -26,7 +26,7 @@
 <body>
 <!-- header -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm">
-  <a class="navbar-brand" href="ServletMovimientos?cuentauno=1">
+  <a class="navbar-brand" href="index.jsp">
     <img src="img/moneda-oro.jpg" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
     F R G P b a n k
   </a>

@@ -242,6 +242,19 @@ public class ServletPrestamos extends HttpServlet {
 			// solicita el prestamo //
 			if(request.getParameter("btnSolicitar") != null) {
 				
+				if(request.getParameter("montoSolic") == "")
+				{
+					RequestDispatcher rd = request.getRequestDispatcher("PrestamoMontoInvalido.jsp");
+					rd.forward(request, response);
+				}
+				Float montoSolic = Float.parseFloat(request.getParameter("montoSolic"));
+				if(montoSolic <= 0)
+				{
+					RequestDispatcher rd = request.getRequestDispatcher("PrestamoMontoInvalido.jsp");
+					rd.forward(request, response);
+				}
+				else
+				{
 				Prestamo prestamo = new Prestamo();
 				NegocioPrestamoImpl solicitud = new NegocioPrestamoImpl();
 				
@@ -286,7 +299,7 @@ public class ServletPrestamos extends HttpServlet {
 				request.setAttribute("nroprestamo", ultimo_prestamo); 
 				RequestDispatcher rd = request.getRequestDispatcher("prestamoconfirmado.jsp");
 				rd.forward(request, response);
-				
+				}
 			}
 			
 			// SECTOR PAGAR PRESTAMOS //

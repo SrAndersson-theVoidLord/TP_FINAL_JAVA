@@ -32,7 +32,7 @@
 <body>
 <!-- header -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm">
-  <a class="navbar-brand" href="usuario.html">
+  <a class="navbar-brand" href="index.jsp">
     <img src="img/moneda-oro.jpg" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
     F R G P b a n k
   </a>
@@ -41,7 +41,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <div class="navbar-nav ml-auto ml-auto text-center">
-      <a class="item-nav" href="index.jsp">HOME</a>
+      <a class="item-nav" href="index.jsp">INICIO</a>
       <a class="item-nav" href="Login.jsp">CERRAR SESIÓN</a>
       <!-- meter icono con usuario logueado -->
     </div>
@@ -57,8 +57,8 @@
       <div class="sidebar-heading"><i class="fas fa-user-circle"></i>
 		<a class="navbar-brand" href="perfilusuario.jsp">${userconect.usuario}</div>
       <div class="list-group list-group-flush">
-        <a href="iniciousuario.jsp" class="list-group-item list-group-item-action bg-light"><i class="fas fa-wallet"></i> Cuentas</a>
-        <a href="transferencias.jsp" class="list-group-item list-group-item-action bg-light"><i class="fas fa-exchange-alt"></i>
+        <a href="ServletMovimientos?cuentauno=1" class="list-group-item list-group-item-action bg-light"><i class="fas fa-wallet"></i> Cuentas</a>
+        <a href="ServletCuentas?cuenta=1" class="list-group-item list-group-item-action bg-light"><i class="fas fa-exchange-alt"></i>
          Transferencias</a>
         <a href="prestamos.jsp" class="list-group-item list-group-item-action bg-light"><i class="fas fa-money-bill-alt"></i> Prestamos</a>
         <a href="perfilusuario.jsp" class="list-group-item list-group-item-action bg-light"><i class="fas fa-address-card"></i> Información personal</a>

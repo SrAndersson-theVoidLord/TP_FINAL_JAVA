@@ -164,8 +164,23 @@ public class ServletMovimientos extends HttpServlet {
 		if(request.getParameter("btnEnviarTransfer")!=null) {
 			
 			
-			int cuentaOrigen = Integer.parseInt(request.getParameter("cuentaOrigen"));
+			if(request.getParameter("monto-transfer") == "") 
+			{
+				RequestDispatcher rd = request.getRequestDispatcher("TransferenciasMontoInvalido.jsp");
+				rd.forward(request, response);
+			}
+			
 			Float montoTransfer = Float.parseFloat(request.getParameter("monto-transfer"));
+			if(montoTransfer < 4000)
+			{
+				RequestDispatcher rd = request.getRequestDispatcher("TransferenciasMontoInvalido.jsp");
+				rd.forward(request, response);
+			}
+			else
+			{
+			
+			int cuentaOrigen = Integer.parseInt(request.getParameter("cuentaOrigen"));
+			//Float montoTransfer = Float.parseFloat(request.getParameter("monto-transfer"));
 		
 			
 			// INSERTAR NUEVO MOVIMIENTO A CUENTA ORIGEN // 
@@ -194,7 +209,7 @@ public class ServletMovimientos extends HttpServlet {
 					// verifico si no lo esta enviando a una cuentra propia //
 					if(cuentaDestino.getNro_Cuenta()== cuentaOrigen) {
 						
-						RequestDispatcher rd = request.getRequestDispatcher("mismacuenta.jsp");
+						RequestDispatcher rd = request.getRequestDispatcher("TransferenciasMontoInvalido.jsp");
 						rd.forward(request, response);
 					}else {
 						
@@ -237,7 +252,7 @@ public class ServletMovimientos extends HttpServlet {
 					cuentaD = usercuenta.BuscarCuentaNroCuenta(cuentaDest);
 					if(cuentaD.getNro_Cuenta()==cuentaOrigen) {
 						
-						RequestDispatcher rd = request.getRequestDispatcher("mismacuenta.jsp");
+						RequestDispatcher rd = request.getRequestDispatcher("TransferenciasMontoInvalido.jsp");
 						rd.forward(request, response);
 					}else {
 						nuevoMovimiento.setNumCuentaMov(cuentaDest);
@@ -272,7 +287,9 @@ public class ServletMovimientos extends HttpServlet {
 				// la cuenta no tiene saldo //
 				RequestDispatcher rd = request.getRequestDispatcher("saldoinsuficiente.jsp");
 				rd.forward(request, response);
-			}		
+			}
+			
+		}
 			
 		} // fin insert transfer
 	}

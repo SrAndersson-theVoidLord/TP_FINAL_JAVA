@@ -360,7 +360,7 @@ public class ServletUsuario extends HttpServlet {
 									// cargo la cuenta uno para usar en el front
 									request.setAttribute("cuentauno", cuentauno);
 
-									RequestDispatcher rd = request.getRequestDispatcher("iniciousuario.jsp");
+									RequestDispatcher rd = request.getRequestDispatcher("index_usuario.jsp");
 									rd.forward(request, response);
 									
 							

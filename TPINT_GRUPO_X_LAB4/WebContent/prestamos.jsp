@@ -24,7 +24,7 @@
 <body>
 <!-- header -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-toggleable-sm">
-  <a class="navbar-brand" href="ServletMovimientos?cuentauno=1">
+  <a class="navbar-brand" href="index.jsp">
     <img src="img/moneda-oro.jpg" width="77" height="77" class="d-inline-block align-center" alt="Logo banco">
     F R G P b a n k
   </a>
@@ -33,7 +33,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <div class="navbar-nav ml-auto ml-auto text-center">
-      <a class="item-nav" href="index.jsp">HOME</a>
+      <a class="item-nav" href="index.jsp">INICIO</a>
 <a class="item-nav" href="ServletUsuario?cerrarSession=1">CERRAR SESIÓN</a>
       <!-- meter icono con usuario logueado -->
     </div>
@@ -73,16 +73,16 @@
       </div>
     -->
    <div class="solicitar">
-    <h3>¡Solicita tu prestamo!</h3>
+    <h3>Solicitar prestamo</h3>
     <div class="opcion-envio">
-  <a class="btn-envio" href="ServletPrestamos?cuentas=1" style="opacity: 1">Solicitud!</a>
+  <a class="btn-envio" href="ServletPrestamos?cuentas=1" style="opacity: 1">Solicitud</a>
 </div> 
    </div>
 
    <div class="pagar">
-    <h3>¡Paga tu prestamo así de fácil!</h3>
+    <h3>Pagar prestamo</h3>
     <div class="opcion-envio">
-  <a class="btn-envio pagarpre" href="ServletPrestamos?listar=1" style="opacity: 1">Pagar!</a>
+  <a class="btn-envio pagarpre" href="ServletPrestamos?listar=1" style="opacity: 1">Pagar</a>
 </div> 
    </div>
 

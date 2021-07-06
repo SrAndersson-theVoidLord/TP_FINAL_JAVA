@@ -17,7 +17,7 @@
     <h2 style="color:red">¡Cuenta de origen y de destino son iguales!</h2>
     <br>
   <div class="opcion-envio">
-  <a class="btn-envio-cp" href="ServletCuenta?cuenta=1">Volver</a>
+  <a class="btn-envio-cp" href="ServletCuentas?cuenta=1">Volver</a>
   </div>   
   </div>
 
