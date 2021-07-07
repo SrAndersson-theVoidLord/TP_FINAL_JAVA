@@ -25,20 +25,19 @@
 						<span class="input-group-text"><i class="fas fa-user"></i></span>
 					</div>
 					<input type="text" id="inuser" name="usuario" class="form-control"
-						placeholder="Usuario">
+						placeholder="Usuario" required >
 				</div>
-				<label id="lbluser" class="msjerror" style="opacity: 0">Complete
-					el campo</label>
+				<br><br>
 				<!-- PASSWORD INPUT -->
 				<div class="input-group">
 					<div class="input-group-prepend">
 						<span class="input-group-text"><i class="fas fa-key"></i></span>
 					</div>
 					<input type="password" id="inpass" name="contrasenia"
-						class="form-control" placeholder="Contraseña">
+						class="form-control" placeholder="Contraseña" required>
 				</div>
-				<label id="lblpass" class="msjerror" style="opacity: 0">Complete
-					el campo</label> <input type="submit" id="btning" name="btnIngresar"
+				<br>
+				 <input type="submit" id="btning" name="btnIngresar"
 					class="btn w-100 btn-primary rounded-pill mt-3" value="Ingresar">
 			</form>
 		</div>

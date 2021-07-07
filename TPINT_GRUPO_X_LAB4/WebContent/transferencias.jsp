@@ -230,7 +230,16 @@ if($(".seccion-cuentas").css("display")=="none"){
 });
 
 });// fin doc
+$(".btn-volver").click(function(e) {
+    e.preventDefault();
     
+    $("html, body").animate({
+      scrollTop:100
+  }, 1200); 
+    $(".seccion-cuentas").fadeOut(700);
+   
+
+  });
 
   </script>
 </body>

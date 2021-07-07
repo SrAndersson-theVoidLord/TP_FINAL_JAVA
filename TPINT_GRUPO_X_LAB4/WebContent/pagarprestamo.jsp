@@ -98,7 +98,7 @@
   
   <!-- tabla con prestamos -->
   <div class="tabla-container">
-<form action="ServletPrestamos" method="get">
+
 
 <table class="table">
   <thead class="thead-dark">
@@ -121,12 +121,12 @@
 					}
 				%>
   <tbody>
-  
+
   							<%
 							if (listaPres != null)
 								for (Prestamo p : listaPres) {
 						 	%>
-						 	
+						 	  <form action="ServletPrestamos" method="get">
 						 	<%
       						Date fecha  = p.getFecha_Alta();
 						 	int dias = (int)(p.getPlazo_Meses()-p.getCuotas_Restantes()+1)*30;
@@ -155,7 +155,7 @@
 						 	
      
       
-            <th scope="row" name="nroPrestamo"><%=p.getNro_Prestamo()%></th> 
+      <th scope="row" name="nroPrestamo"><%=p.getNro_Prestamo()%></th> 
       <td ><%=dateOnly.format(calendar.getTime())%></td>
       <td name="montoMensual">$<%=montoMensual%></td>
       <td name="saldoRestante">$<%=p.getSaldo_Restante()%></td> 
@@ -204,16 +204,16 @@
       <!-- inicia parte de boton pagar  <button type="button" class="btn btn-dark">Pagar</button> -->
      
    
-     						 <td>
+     <td>
 								
-								<a><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalPrestamo">Pagar</button></a>
+			<a><button type="button" class="btn btn-danger" name ="<%=p.getNro_Prestamo()%>" id="<%=p.getNro_Prestamo()%>" data-toggle="modal" data-target="#modalPrestamo<%=p.getNro_Prestamo()%>">Pagar</button></a>
 
-							</td>
-						</tr>
+	</td>
+</tr>
 						
 						
 						
- <div class="modal fade" id="modalPrestamo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal fade" id="modalPrestamo<%=p.getNro_Prestamo()%>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -238,28 +238,29 @@
     </div>
   </div>
 </div>
+
+  </form>     
       
-    					
+    	        <%
+							}
+						 	%>				
       
       
-      
+
       
            
       <!-- finaliza parte de boton pagar -->
       
       
-   
+
     
   				
 
   </tbody>
-     <%
-							}
-						 	%>
   
 </table>
 
-</form> 
+
     
 
     
